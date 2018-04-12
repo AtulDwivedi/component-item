@@ -1,0 +1,17 @@
+<html>
+<body>
+	<table border="1px">
+		<tr>
+			<th>Item Name</th>
+			<th>Item Description</th>
+			<th>Price</th>
+		</tr>
+		<tr th:each="item : ${items}">
+			<td th:text="${item.itemName}"></td>
+			<td th:text="${item.itemDescription}"></td>
+			<td  th:text="${item.itemPrice}"></td>
+		</tr>
+	</table>
+	<!-- <p th:each="item : ${items}" th:text="${item.itemName}">Item</p> -->
+</body>
+</html>
